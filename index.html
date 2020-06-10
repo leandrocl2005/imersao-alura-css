@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Leandro Cruvinel</title>
+        <script src="https://kit.fontawesome.com/0efb439bd7.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    </head>
+    <body>
+
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="titulo">
+                <h1 class="site-title">Leandro Cruvinel</h1>
+                <h2 class="site-subtitle">Data scientist &amp; web Developer</h2>
+                <h2 class="site-subtitle"></h2>
+            </div>
+        </header>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre</h2>
+            <figure class="avatar">
+                <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum sem in sapien tempor efficitur. Nulla interdum justo id sapien faucibus viverra. Donec suscipit ante ut tortor pretium, sed sollicitudin massa aliquam. Maecenas eget aliquet enim. Donec dictum lorem eu mi malesuada posuere. Praesent quam erat, pharetra quis tincidunt vitae, lacinia quis metus. Nulla non nulla varius, ultrices ex vel, molestie nunc. Duis mattis ligula quis ultricies lacinia. Morbi ac auctor nibh. Nam eget nisl eget lorem laoreet ultrices. Donec at libero turpis. Morbi pretium augue eget diam efficitur vehicula. In mi est, pulvinar non ex eu, sodales gravida eros. Integer viverra enim nec fringilla aliquet.</p>
+
+            <p>Mauris vitae tempor nisi, et hendrerit eros. Duis egestas enim quam, a tincidunt nunc ullamcorper a. Nullam congue maximus dolor id semper. Maecenas vitae elit non purus lobortis elementum. Phasellus efficitur luctus dui, ac cursus nunc placerat eget. In quis nisl sed sem venenatis dapibus. Nulla imperdiet libero non purus mollis, a commodo libero placerat. Pellentesque id ex purus. Praesent aliquam maximus mi, nec rhoncus dui lacinia id. Aenean ut augue eget diam ultricies fermentum eu eget massa. Maecenas ac mi sit amet lorem aliquet rutrum sit amet tristique nibh. Aenean pellentesque sit amet velit eget luctus. Sed non diam quam. Cras in leo vulputate, blandit est pulvinar, maximus justo. Nullam elementum turpis iaculis enim feugiat, sit amet bibendum nisl efficitur. Donec ultricies, urna id blandit volutpat, risus est dignissim nibh, eu accumsan augue dolor eget augue.</p>
+
+        </section>
+
+        <section class="portfolio" id="projects">
+            <h2>Projects</h2>
+
+            <div class="grid">
+
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+                            <figcaption>eCommerce</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            Oi eu sou a parte de trás! : )
+                        </div>
+                    </div>
+                </div>
+
+                <figure>
+                    <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                    <figcaption>Mobile</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+                    <figcaption>Web design</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+                    <figcaption>Projetos pessoais</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section class="contato" id="contact">
+            <h2>Contato</h2>
+            <div class="grid icons">
+                <a target="_blank" href="https://github.com/leandrocl2005">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/leandrocl2005">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a target="_blank" href="https://linkedin.com/in/leandrolemes">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:faker@faker.com.br">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+        <style src="js/scripts.js"></style>
+        
+    </body>
+</html>
